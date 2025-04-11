@@ -7,7 +7,8 @@ Now what if you have a Balkonkraftwerk (=one or more additional solar inverters 
 You now can get an SMA energy meter and connect it to your extra non-SMA inverter. Then use my software to "add-in" the values of this meter to your main meter.
 Another problem in your setup can be that you have several energy meters and different places and want to have the values combined.
 My program simply gets the values of your "master" meter and values of your "extra" meter(s) and combines all values into a virtual/emulated energy meter.
-(In the end you even don't need the extra SMA EMeter because it's all based on JSON values (which you can get from many inverters easily). So if you have time and need then my program is a good base for such an approach.)
+(In the end you even don't need the extra SMA EMeter because it's all based on JSON values (which you can get from many inverters easily). 
+See my other project which combines SMA speedwire inverters with Hoymiles JSON at https://github.com/Vinylrider/virtualsmainverter)
 
 Btw, my program also handles the problem if you connected your energy meter wrong to the inverter (having supply as consume and vice versa).
 
