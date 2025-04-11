@@ -12,6 +12,7 @@ My program simply gets the values of your "master" meter and values of your "ext
 Btw, my program also handles the problem if you connected your energy meter wrong to the inverter (having supply as consume and vice versa).
 
 Example output :<br>
+<br>
 <b>SMA-EM Serial:xxxxxxxx (MASTER)</b><br>
 ----sum----<br>
 P: consume:0.0W 179655.8169kWh supply:3773.3W 123561.0353kWh<br>
@@ -81,6 +82,6 @@ Q: cap 3372.0var 11846.9288kvarh ind 0.0var 9307.9197kvarh<br>
 U: 238.243V I:18.238A cos phi:0.495Â°<br>
 Version: 1.2.4.R|010204<br>
 <br>
-Thanks to :
-https://github.com/datenschuft/SMA-EM : I use their "speedwiredecoder.py" for decoding and sma-em-measurement.py for testing the emulator.
-https://github.com/Roeland54/SMA-Energy-Meter-emulator : I use their "emeter.py" for encoding, but had to fix an UDP protocol address so it is "emeter2.py" in my rep.
+<u>Thanks to </u>:<br>
+https://github.com/datenschuft/SMA-EM : I use their "speedwiredecoder.py" for decoding and sma-em-measurement.py for testing the emulator.<br>
+https://github.com/Roeland54/SMA-Energy-Meter-emulator : I use their "emeter.py" for encoding, but had to fix an UDP protocol address so it is "emeter2.py" in my rep.<br>
