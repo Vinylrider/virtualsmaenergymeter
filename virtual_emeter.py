@@ -149,15 +149,15 @@ def main():
             meter_data[sn] = decoded
 
             if sn != MAIN_METER_SN:
-                continue  # Warte auf Hauptz‰hler
+                continue  # Warte auf Hauptz√§hler
 
             master = decoded.copy()
 
             supply_keys = [
                 'psupply', 'psupplycounter', 'ssupply', 'ssupplycounter', 'qsupply', 'qsupplycounter',
-                'p1supply', 'p1supplycounter', 's1supply', 's1supplycounter',
-                'p2supply', 'p2supplycounter', 's2supply', 's2supplycounter',
-                'p3supply', 'p3supplycounter', 's3supply', 's3supplycounter',
+                'p1supply', 'p1supplycounter', 's1supply', 's1supplycounter', 'q1supply', 'q1supplycounter',
+                'p2supply', 'p2supplycounter', 's2supply', 's2supplycounter', 'q2supply', 'q2supplycounter',
+                'p3supply', 'p3supplycounter', 's3supply', 's3supplycounter', 'q3supply', 'q3supplycounter',
                 'i1', 'i2', 'i3'
             ]
             for sn2 in SUPPLY_METERS:
@@ -170,10 +170,13 @@ def main():
                 'qconsume': 'qconsume', 'qconsumecounter': 'qconsumecounter',
                 'p1consume': 'p1supply', 'p1consumecounter': 'p1supplycounter',
                 's1consume': 's1supply', 's1consumecounter': 's1supplycounter',
+                'q1consume': 'q1consume', 'q1consumecounter': 'q1consumecounter',
                 'p2consume': 'p2supply', 'p2consumecounter': 'p2supplycounter',
                 's2consume': 's2supply', 's2consumecounter': 's2supplycounter',
+                'q2consume': 'q2consume', 'q2consumecounter': 'q2consumecounter',
                 'p3consume': 'p3supply', 'p3consumecounter': 'p3supplycounter',
                 's3consume': 's3supply', 's3consumecounter': 's3supplycounter',
+                'q3consume': 'q3consume', 'q3consumecounter': 'q3consumecounter',
                 'i1': 'i1', 'i2': 'i2', 'i3': 'i3'
             }
             for sn2 in CONSUME_METERS:
